@@ -9,10 +9,10 @@
 .message-parent {
   width: 100%;
   position: absolute;
-  background-color: rgba(44, 200, 255, 0.6);
+  background-color: rgba(44, 200, 25, 0.6);
   backdrop-filter: blur(30px);
   height: 100vh;
-  color: #dfd0b8;
+  color: #ffffff;
   font-size: 30px;
 }
 .message-box {
@@ -23,6 +23,47 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+/* FOR ALERT MESSAGE */
+.alert-parent {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 30%;
+  top: 3%;
+  border-radius: 10px;
+  background-color: rgba(250, 10, 5, 0.3);
+  backdrop-filter: blur(10px);
+  height: 100px;
+  color: #dfd0b8;
+  font-size: 30px;
+}
+.alert-box {
+  /* display: none; */
+}
+.alert-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+.alert-container button {
+  width: 30px;
+  height: 30px;
+  left: 95%;
+  font-size: 30px;
+  background-color: yellow;
+  color: #3c5b6f;
+  cursor: pointer;
+  top: 30%;
+  position: fixed;
+}
+.alert-container button:hover {
+  background-color: orangered;
+  color: #ffffff;
 }
 
 .login-parent-div {

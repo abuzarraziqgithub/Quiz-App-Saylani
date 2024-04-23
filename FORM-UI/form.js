@@ -3,24 +3,30 @@ function submitForm(event) {
   event.preventDefault();
 
   // validate inputs
-  var rollNo = document.getElementById("form-roll-no").value;
-  var name = document.getElementById("form-name").value;
-  var batch = document.getElementById("form-batch").value;
-  var section = document.getElementById("form-section").value;
+  const rollNo = document.getElementById("form-roll-no").value;
+  const name = document.getElementById("form-name").value;
+  const batch = document.getElementById("form-batch").value;
+  const section = document.getElementById("form-section").value;
 
   if (!rollNo || !name || !batch || !section) {
-    alert("Please fill all fields");
+    var alertMessage = document.querySelector(".alert-box");
+    alertMessage.style.display = "block";
     return;
   }
 
   // show success message
-  var messageBox = document.querySelector(".message-box");
+  const messageBox = document.querySelector(".message-box");
   messageBox.style.display = "block";
 
   // store data in Session Storage
   sessionStorage.setItem(
     "studentData",
-    JSON.stringify({ rollNo, name, batch, section })
+    JSON.stringify(`
+    ${rollNo},
+    ${name}, 
+    ${batch}, 
+    ${section}
+   }`)
   );
 
   // delay redirection to quiz page
@@ -30,5 +36,11 @@ function submitForm(event) {
 
     // redirect to quiz page
     window.location.href = "../Quiz-Page/index.html";
-  }, 1000);
+  }, 1500);
 }
+
+const exitMessageBtn = document.getElementById("alert-ext-btn");
+exitMessageBtn.addEventListener("click", function () {
+  const exitBtn = document.querySelector(".alert-box");
+  exitBtn.style.display = "none";
+});

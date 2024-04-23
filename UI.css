@@ -25,11 +25,11 @@ body {
   flex-direction: column;
   width: 80%;
   height: 70vh;
-  gap: 10%;
+  gap: 2%;
   font-weight: 600;
   color: #e3fef7;
   border-radius: 50px;
-  box-shadow: 1px 1px 30px #77b0aa;
+  box-shadow: 5px 5px 10px #77b0aa;
 }
 .ui-sub-parent-div .logo {
   display: flex;
@@ -46,7 +46,9 @@ body {
   display: flex;
   border: 1px dotted #003c43;
   width: 50%;
-  padding: 2%;
+  padding: 3%;
+  font-size: 22px;
+  padding-bottom: 5%;
 }
 .ui-sub-parent-div .ui-Btn {
   width: 15%;
@@ -58,7 +60,7 @@ body {
   font-size: 19px;
   font-weight: 700;
   cursor: pointer;
-  margin-bottom: 3%;
+  margin-top: 3%;
 }
 .ui-sub-parent-div .ui-Btn:hover {
   color: #77b0aa;
