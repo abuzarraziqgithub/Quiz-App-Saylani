@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Form</title>
+    <link rel="stylesheet" href="./quiz.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Quiz Application</h1>
+      <form id="quiz-form">
+        <label for="topic">Topic:</label>
+        <input type="text" id="topic" required />
+        <h2>Questions:</h2>
+        <div class="question">
+          <label for="question1">Question 1:</label>
+          <input type="text" id="question1" required />
+          <label for="answer1-1"
+            ><input type="radio" id="answer1-1" name="answer1" /> Option
+            1</label
+          >
+          <label for="answer1-2"
+            ><input type="radio" id="answer1-2" name="answer1" /> Option
+            2</label
+          >
+          <label for="answer1-3"
+            ><input type="radio" id="answer1-3" name="answer1" /> Option
+            3</label
+          >
+          <label for="answer1-4"
+            ><input type="radio" id="answer1-4" name="answer1" /> Option
+            4</label
+          >
+        </div>
+        <div class="question">
+          <label for="question2">Question 2:</label>
+          <input type="text" id="question2" required />
+          <label for="answer2-1"
+            ><input type="radio" id="answer2-1" name="answer2" /> Option
+            1</label
+          >
+          <label for="answer2-2"
+            ><input type="radio" id="answer2-2" name="answer2" /> Option
+            2</label
+          >
+          <label for="answer2-3"
+            ><input type="radio" id="answer2-3" name="answer2" /> Option
+            3</label
+          >
+          <label for="answer2-4"
+            ><input type="radio" id="answer2-4" name="answer2" /> Option
+            4</label
+          >
+        </div>
+        <!-- Add more questions here -->
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

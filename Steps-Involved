@@ -1,0 +1,27 @@
+STEP -> 1 :
+
+-> CREATE A UI WITH BACKGROUD IMAGES AND GRADIENTS ALSO WITH A BUTON GETTING STARTED.
+                                                                                
+                                                                                -> H1 
+                                                                                ->   
+
+
+-> CREATE HTML FORM TO COLLECT 
+     -> ROLL NO
+     -> NAME
+     -> BATCH
+     -> SECTION
+
+-> BREAKDOWN 
+      
+      -> CREATE A DIV
+                  -> CREATE ANOTHER DIV
+                                     -> H1 TAG
+                                     -> H2 TAG
+                                    -> CREATE FORM
+                                                 -> LABELS AND INPUTS 
+                                                                    -> BR TAG FOR NEW LINE
+                                                                                        -> SUBMIT BTN.
+     -> STORING DATA OF THE FORM IN SESSION STORAGE:
+                 
+3RD PAGE :

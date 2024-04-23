@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- FORM SUCCESS MESSAGE -->
+    <div class="message-parent message-box">
+      <div class="message-container">
+        <h3>Form Submitted Successfully 🎉🎉🎯</h3>
+      </div>
+    </div>
+
+    <!-- Login Page -->
+    <div class="login-parent-div">
+      <div class="login-sub-parent-div">
+        <div class="logo">
+          <img src="../saylani-logo.png" alt="logo" />
+        </div>
+        <h1>
+          <span id="quiz-title">
+            <h3>STUDENT FORM</h3>
+          </span>
+        </h1>
+        <span class="form-labels">
+          <label for="roll-no">Roll No :</label>
+        </span>
+        <input type="number" required class="form-input" id="form-roll-no" />
+        <br />
+        <span class="form-labels"><label for="name">Name :</label></span>
+        <input type="text" required class="form-input" id="form-name" />
+        <br />
+        <span class="form-labels"><label for="batch">Batch :</label> </span>
+        <input type="text" required class="form-input" id="form-batch" />
+        <br />
+        <span class="form-labels"><label for="section"> Section :</label></span>
+        <input type="text" required class="form-input" id="form-section" />
+        <button type="submit" id="form-subt-Btn">Submit</button>
+      </div>
+    </div>
+
+    <script src="./form.js"></script>
+  </body>
+</html>
