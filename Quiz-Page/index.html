@@ -3,59 +3,178 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz Form</title>
+    <title>Student Quiz</title>
     <link rel="stylesheet" href="./quiz.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Quiz Application</h1>
-      <form id="quiz-form">
-        <label for="topic">Topic:</label>
-        <input type="text" id="topic" required />
-        <h2>Questions:</h2>
-        <div class="question">
-          <label for="question1">Question 1:</label>
-          <input type="text" id="question1" required />
-          <label for="answer1-1"
-            ><input type="radio" id="answer1-1" name="answer1" /> Option
-            1</label
-          >
-          <label for="answer1-2"
-            ><input type="radio" id="answer1-2" name="answer1" /> Option
-            2</label
-          >
-          <label for="answer1-3"
-            ><input type="radio" id="answer1-3" name="answer1" /> Option
-            3</label
-          >
-          <label for="answer1-4"
-            ><input type="radio" id="answer1-4" name="answer1" /> Option
-            4</label
-          >
+    <div class="parent-div">
+      <div class="sub-parent-div">
+        <div class="logo">
+          <img src="../saylani-logo.png" alt="logo" />
         </div>
-        <div class="question">
-          <label for="question2">Question 2:</label>
-          <input type="text" id="question2" required />
-          <label for="answer2-1"
-            ><input type="radio" id="answer2-1" name="answer2" /> Option
-            1</label
-          >
-          <label for="answer2-2"
-            ><input type="radio" id="answer2-2" name="answer2" /> Option
-            2</label
-          >
-          <label for="answer2-3"
-            ><input type="radio" id="answer2-3" name="answer2" /> Option
-            3</label
-          >
-          <label for="answer2-4"
-            ><input type="radio" id="answer2-4" name="answer2" /> Option
-            4</label
-          >
+        <div class="heading-div">
+          <h1>
+            Quiz for Web and App Development
+            <h3>Choose the correct option and complete all the questions</h3>
+          </h1>
         </div>
-        <!-- Add more questions here -->
-        <button type="submit">Submit</button>
-      </form>
+        <div class="form-div">
+          <form id="quiz-form" onsubmit="submitQuiz(event)">
+            <div class="question">
+              <p>Question 1: What does HTML stand for?</p>
+              <input
+                type="radio"
+                name="question1"
+                value="Hyper Text Markup Language"
+              />
+              Hyper Text Markup Language<br />
+              <input
+                type="radio"
+                name="question1"
+                value="Home Tool Markup Language"
+              />
+              Home Tool Markup Language<br />
+              <input
+                type="radio"
+                name="question1"
+                value="Hyperlinks and Text Markup Language"
+              />
+              Hyperlinks and Text Markup Language<br />
+              <input type="radio" name="question1" value="None of these" /> None
+              of these<br />
+            </div>
+            <div class="question">
+              <p>Question 2: Which is not a JavaScript Framework?</p>
+              <input type="radio" name="question2" value="Python Script" />
+              Python Script<br />
+              <input type="radio" name="question2" value="jQuery" />
+              jQuery<br />
+              <input type="radio" name="question2" value="Django" />
+              Django<br />
+              <input type="radio" name="question2" value="NodeJS" />
+              NodeJS<br />
+            </div>
+
+            <div class="question">
+              <p>Question 3 : What does CSS stand for?</p>
+              <input type="radio" name="question3" value="CLEAR STYLE SHEET" />
+              CLEAR STYLE SHEET <br />
+              <input
+                type="radio"
+                name="question3"
+                value="CASCADING STYLE SHEET"
+              />
+              CASCADING STYLE SHEET<br />
+              <input
+                type="radio"
+                name="question3"
+                value="COMPUTER STYLE SHEET"
+              />
+              COMPUTER STYLE SHEET<br />
+              <input type="radio" name="question3" value="None of these" /> None
+              of these<br />
+            </div>
+
+            <div class="question">
+              <p>
+                Question 4 : Which technology is primarily responsible for the
+                styling of web pages?
+              </p>
+              <input type="radio" name="question4" value="JAVASCRIPT" />
+              JAVASCRIPT<br />
+              <input type="radio" name="question4" value="HTML" />
+              HTML <br />
+              <input type="radio" name="question4" value="CSS" />
+              CSS<br />
+              <input type="radio" name="question4" value="None of these" /> None
+              of these<br />
+            </div>
+
+            <div class="question">
+              <p>
+                Question 5: Which programming language is mainly used for adding
+                interactivity to websites?
+              </p>
+              <input type="radio" name="question5" value="HTML" />
+              HTML<br />
+              <input type="radio" name="question5" value="PYTHON" />
+              PYTHON<br />
+              <input type="radio" name="question5" value="JAVASCRIPT" />
+              JAVASCRIPT<br />
+              <input type="radio" name="question5" value="None of these" /> None
+              of these<br />
+            </div>
+
+            <div class="question">
+              <p>
+                Question 6: Which part of web development is responsible for
+                handling data storage and retrieval?
+              </p>
+              <input
+                type="radio"
+                name="question6"
+                value="FRONT-END DEVELOPMENT"
+              />
+              FRONT-END DEVELOPMENT<br />
+              <input
+                type="radio"
+                name="question6"
+                value="BACK-END DEVELOPMENT"
+              />
+              BACK-END DEVELOPMENT<br />
+              <input
+                type="radio"
+                name="question6"
+                value="FULL-STACK DEVELOPMENT"
+              />
+              FULL-STACK DEVELOPMENT<br />
+              <input type="radio" name="question6" value="None of these" /> None
+              of these<br />
+            </div>
+
+            <div class="question">
+              <p>
+                Question 7: Which of the following is not a back-end programming
+                language commonly used in web development?
+              </p>
+              <input type="radio" name="question7" value="HTML" />
+              HTML<br />
+              <input type="radio" name="question7" value="PHP" />
+              PHP<br />
+              <input type="radio" name="question7" value="RUBY" />
+              RUBY<br />
+              <input type="radio" name="question7" value="None of these" /> None
+              of these<br />
+            </div>
+
+            <div class="question">
+              <p>Question 8: Which HTML tag is used to create a hyperlink?</p>
+              <input type="radio" name="question8" value="{a}" />
+              {a}<br />
+              <input type="radio" name="question8" value="{link}" />
+              {link}<br />
+              <input type="radio" name="question8" value="{h1}" />
+              {h1}<br />
+              <input type="radio" name="question8" value="None of these" /> None
+              of these<br />
+            </div>
+            <div class="submit-btn">
+              <input type="submit" value="Submit" id="form-submit-Btn" />
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+          </form>
+        </div>
+      </div>
     </div>
+
+    <script src="./quiz.js"></script>
   </body>
 </html>
