@@ -14,7 +14,7 @@ function submitQuiz(event) {
   event.preventDefault();
 
   // validate answers
-  const answers = {};
+  let answers = {};
   for (let question in correctAnswers) {
     let radios = document.getElementsByName(question);
     for (let i = 0; i < radios.length; i++) {

@@ -41,7 +41,7 @@
   font-size: 30px;
 }
 .alert-box {
-  /* display: none; */
+  display: none;
 }
 .alert-container {
   display: flex;

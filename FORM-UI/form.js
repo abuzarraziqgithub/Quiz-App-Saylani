@@ -9,14 +9,10 @@ function submitForm(event) {
   const section = document.getElementById("form-section").value;
 
   if (!rollNo || !name || !batch || !section) {
-    setTimeout(() => {
-      const alertMessage = document.querySelector(".alert-box");
-      alertMessage.style.display = "none";
-    }, 500);
-
-    // return;
+    const alertMessage = document.querySelector(".alert-box");
+    alertMessage.style.display = "block";
+    return;
   }
-
   // show success message
   const messageBox = document.querySelector(".message-box");
   messageBox.style.display = "block";
