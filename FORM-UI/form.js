@@ -9,9 +9,12 @@ function submitForm(event) {
   const section = document.getElementById("form-section").value;
 
   if (!rollNo || !name || !batch || !section) {
-    var alertMessage = document.querySelector(".alert-box");
-    alertMessage.style.display = "block";
-    return;
+    setTimeout(() => {
+      const alertMessage = document.querySelector(".alert-box");
+      alertMessage.style.display = "none";
+    }, 500);
+
+    // return;
   }
 
   // show success message
@@ -21,7 +24,9 @@ function submitForm(event) {
   // store data in Session Storage
   sessionStorage.setItem(
     "studentData",
-    JSON.stringify(rollNo, name, batch, section)
+    JSON.stringify(
+      `Roll No : ${rollNo}  ,  Name : ${name} ,  Batch : ${batch} ,  Section : ${section}`
+    )
   );
 
   // delay redirection to quiz page
@@ -34,8 +39,8 @@ function submitForm(event) {
   }, 1500);
 }
 
-const exitMessageBtn = document.getElementById("alert-ext-btn");
-exitMessageBtn.addEventListener("click", function () {
-  const exitBtn = document.querySelector(".alert-box");
-  exitBtn.style.display = "none";
-});
+// const exitMessageBtn = document.getElementById("alert-ext-btn");
+// exitMessageBtn.addEventListener("click", function () {
+//   const exitBtn = document.querySelector(".alert-box");
+//   exitBtn.style.display = "none";
+// });
