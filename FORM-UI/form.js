@@ -9,8 +9,9 @@ function submitForm(event) {
   const section = document.getElementById("form-section").value;
 
   if (!rollNo || !name || !batch || !section) {
-    const alertMessage = document.querySelector(".alert-box");
-    alertMessage.style.display = "block";
+    // const alertMessage = document.querySelector(".alert-box");
+    // alertMessage.style.display = "block";
+    alert("Please Fill the Form Completely");
     return;
   }
   // show success message
