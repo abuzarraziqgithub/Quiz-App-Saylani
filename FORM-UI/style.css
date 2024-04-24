@@ -75,12 +75,12 @@
 }
 .login-parent-div .login-sub-parent-div {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: #3c5b6f;
-  width: 40%;
-  height: 60vh;
+  width: 30%;
+  height: 70vh;
   margin-top: 10%;
   border-radius: 10px;
   border: 2px solid #948979;
@@ -90,14 +90,14 @@
   font-weight: 400;
   color: #948979;
   width: 100%;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 .login-sub-parent-div .form-labels {
   font-size: 20px;
   color: #dfd0b8;
 }
 .login-sub-parent-div .form-input {
-  width: 35%;
+  width: 50%;
   height: 5%;
   border: 1px solid #153448;
   border-radius: 6px;
@@ -107,6 +107,7 @@
   font-size: 17px;
   font-weight: 500;
   columns: #948979;
+  margin-top: 1.5%;
 }
 .login-sub-parent-div .form-input:focus {
   outline: none;
@@ -118,7 +119,7 @@
   align-items: center;
   width: 20%;
   height: 3.5vh;
-  margin-top: 4%;
+  margin-top: 10%;
   border: 1px solid #153448;
   background-color: #948979;
   color: #ffff;

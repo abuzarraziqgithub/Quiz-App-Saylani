@@ -21,12 +21,7 @@ function submitForm(event) {
   // store data in Session Storage
   sessionStorage.setItem(
     "studentData",
-    JSON.stringify(`
-    ${rollNo},
-    ${name}, 
-    ${batch}, 
-    ${section}
-   }`)
+    JSON.stringify(rollNo, name, batch, section).length
   );
 
   // delay redirection to quiz page
