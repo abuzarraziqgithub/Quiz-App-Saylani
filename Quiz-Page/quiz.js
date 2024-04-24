@@ -15,8 +15,8 @@ function submitQuiz(event) {
 
   // validate answers
   const answers = {};
-  for (const question in correctAnswers) {
-    const radios = document.getElementsByName(question);
+  for (let question in correctAnswers) {
+    let radios = document.getElementsByName(question);
     for (let i = 0; i < radios.length; i++) {
       if (radios[i].checked) {
         answers[question] = radios[i].value;
