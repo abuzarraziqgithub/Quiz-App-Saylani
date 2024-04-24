@@ -16,4 +16,4 @@ document.getElementById("correct-answers").textContent =
   "Correct Answers: " + JSON.stringify(correctAnswers);
 // You'll need to calculate the total marks based on the selected answers and correct answers
 document.getElementById("total-marks").textContent =
-  "Total Marks: " + correctAnswers.length;
+  "Total Marks: " + correctAnswers;
