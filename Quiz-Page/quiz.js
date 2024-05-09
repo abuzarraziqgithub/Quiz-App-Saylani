@@ -23,10 +23,6 @@ function submitQuiz(event) {
         break;
       }
     }
-    if (!answers[question]) {
-      alert("Please complete all questions");
-      return;
-    }
   }
 
   // store data in Session Storage
